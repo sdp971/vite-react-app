@@ -29,7 +29,7 @@ function PokemonCard()
           src={pokemon.imgSrc}
           alt={`le Pokemon ${pokemon.name}`}
         /> : <p>???</p>}
-      
+        <figcaption>{pokemon.name}</figcaption>
       </figure>
     </div>
   );
