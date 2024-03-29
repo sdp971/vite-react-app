@@ -34,7 +34,7 @@ function App() {
   const handlePokemonIndex = (e) => {
     setPokemonIndex(e);
     if (e === 3) {
-     alert('Pika')
+     alert('pika pikachu !!!');
     }
   };
 
