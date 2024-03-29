@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 
 function NavBar({
 
-handlePokemonIndex,
+  handlePokemonIndex,
+  
   pokemonList,
 }) {
   return (

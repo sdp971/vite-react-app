@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PokemonCard from './components/PokemonCard';
 import NavBar from './components/NavBar';
 
@@ -32,10 +32,15 @@ function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
 
   const handlePokemonIndex = (e) => {
-      setPokemonIndex(e)
+    setPokemonIndex(e);
+    if (e === 3) {
+     alert('Pika')
+    }
   };
 
- 
+  useEffect(() => {
+    alert('hello pokemon trainer :)');
+  }, []);
 
   return (
     <div>
@@ -43,7 +48,8 @@ function App() {
 
       <NavBar
         pokemonIndex={pokemonIndex}
-       handlePokemonIndex={handlePokemonIndex} pokemonList={pokemonList}
+        handlePokemonIndex={handlePokemonIndex}
+        pokemonList={pokemonList}
       />
     </div>
   );
